@@ -13,16 +13,108 @@
     <!-- font-awesome-cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+
+<body class="font-manrope">
     <!-- header section -->
-     <header>
-        <!-- navbar -->
-            <div class="btn text-3xl btn-error text-white">This is my project</div>
-         <!-- hero section -->
+     <header class="bg-base-200 pt-6 pb-20">
+        <div class="container mx-auto">
+            <!-- navbar -->
+            <div class="navbar bg-base-200">
+                <div class="navbar-start">
+                  <div class="text-xl flex items-center gap-2">
+                    <div class="py-[0.1rem] px-[0.5rem] rounded-full bg-[#ABEF5F]">
+                        <i class="fa-solid fa-arrow-up-long rotate-45"></i>
+                    </div>
+                    <h3 class="text-3xl md:text-4xl font-bold capitalize">
+                        rinterio
+                    </h3>
+                  </div>
+                </div>
+
+                <!-- nav-options -->
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                      <li><a class="text-lg capitalize font-bold" href="#">home</a></li>
+                      <li><a class="text-lg capitalize" href="#">service</a></li>
+                      <li><a class="text-lg capitalize" href="#">portfolio</a></li>
+                      <li><a class="text-lg capitalize" href="#">blog</a></li>
+                      <li><a class="text-lg capitalize" href="#">contact us</a></li>
+                  </ul>
+                </div>
+
+                <!-- nav-right -->
+                <div class="navbar-end">
+                  <div class="rounded-full hidden md:block px-[0.6rem] py-[0.3rem] bg-[#ffffff] shadow-md mr-4">
+                    <i class="fa-solid fa-magnifying-glass -rotate-10"></i>
+                  </div>
+                  <div class="rounded-full hidden md:block px-[0.6rem] py-[0.3rem] bg-[#ffffff] shadow-md mr-4">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+
+                  <!-- nav-btn -->
+                  <a class="btn hidden md:flex rounded-3xl bg-[#ABEF5F]">
+                    <p class="text-[16px] font-bold capitalize text-black">book consult</p>
+                    <div class="py-[0.4rem] px-[0.5rem] rounded-full bg-[#000000]">
+                      <i class="fa-solid fa-arrow-up-long rotate-45 text-white"></i>
+                    </div>
+                  </a>
+
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <div class="px-4 py-[0.9rem] bg-white shadow-lg rounded-full">
+                        <i class="fa-solid fa-bars"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            <!-- hero section -->
+            <div class="hero bg-base-200">
+              <div class="hero-content text-center">
+                <div>
+                  <div class="grid place-content-center mb-6">
+                    <img src="assets/banner.png" alt="banner">
+                  </div>
+                  <h1 class="text-4xl lg:text-7xl tracking-tighter font-black mb-4">
+                    A barn house of this design has a striking appearance
+                  </h1>
+                  <p class="py-6 md:w-[90%] lg:w-[70%] mx-auto">
+                    Discover Your Perfect Home. Explore our curated listings and step into the life you've always dreamed of.Luxury Living Made Easy. Find your ideal property with our expert guidance and personalized service
+                  </p>
+                  <button class="btn w-full md:mx-auto md:w-[200px] bg-[#ABEF5F80] rounded-3xl">
+                      <h4 class="text-xl font-extrabold capitalize">view details</h4>
+                      <div class="py-2 px-[0.6rem] rounded-full bg-[#ABEF5F]">
+                        <i class="fa-solid fa-arrow-up-long rotate-45"></i>
+                      </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
      </header>
 
     <!-- main section -->
-     <main></main>
+     <main class="bg-base-200 py-16">
+        <!-- about us -->
+         <div>
+          <!-- text-section -->
+          <div class="text-center">
+            <button class="btn bg-white rounded-3xl mb-4">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <p class="font-bold capitalize text-lg">about us</p>
+            </button>
+            <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter mb-6">
+              We design thoughtful, liveable spaces
+            </h2>
+            <p class="text-lg md:w-[90%] md:mx-auto lg:w-full">
+              The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.
+            </p>
+          </div>
+          <!-- image part -->
+          <div></div>
+         </div>
+     </main>
 
     <!-- footer section -->
      <footer></footer>
