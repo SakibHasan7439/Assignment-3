@@ -16,7 +16,7 @@
 
 <body class="font-manrope">
     <!-- header section -->
-     <header class="bg-base-200 pt-6 pb-20">
+     <header class="bg-base-200 pt-6 pb-12">
         <div class="container mx-auto">
             <!-- navbar -->
             <div class="navbar bg-base-200">
@@ -76,7 +76,7 @@
                   <div class="grid place-content-center mb-6">
                     <img src="assets/banner.png" alt="banner">
                   </div>
-                  <h1 class="text-4xl lg:text-7xl tracking-tighter font-black mb-4">
+                  <h1 class="text-4xl lg:text-7xl tracking-tighter font-extrabold mb-4">
                     A barn house of this design has a striking appearance
                   </h1>
                   <p class="py-6 md:w-[90%] lg:w-[70%] mx-auto">
@@ -95,25 +95,126 @@
      </header>
 
     <!-- main section -->
-     <main class="bg-base-200 py-16">
-        <!-- about us -->
-         <div>
+     <main class="bg-base-200 py-8 lg:py-12">
+        <div class="container mx-auto">
+         <!-- about us container-->
+         <div class="lg:grid grid-cols-2 mb-4 lg:mb-20">
           <!-- text-section -->
-          <div class="text-center">
-            <button class="btn bg-white rounded-3xl mb-4">
-              <i class="fa-solid fa-arrow-right-long"></i>
-              <p class="font-bold capitalize text-lg">about us</p>
-            </button>
-            <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter mb-6">
-              We design thoughtful, liveable spaces
+          <div class="text-center mb-6 pt-[2rem] lg:relative">
+            <div class="lg:grid place-content-start">
+              <div class="hidden lg:block lg:absolute -top-4 -left-4">
+                <img src="assets/Vector.png" alt="vector image">
+              </div>
+              <button class="btn bg-white rounded-3xl mb-4">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <p class="font-bold capitalize text-lg">about us</p>
+              </button>
+            </div>
+            <h2 class="text-4xl lg:text-5xl md:text-left lg:mb-10 font-extrabold tracking-[-0.01] mb-6">
+              We design thoughtful,
+              <span class="lg:block">liveable spaces</span>
             </h2>
-            <p class="text-lg md:w-[90%] md:mx-auto lg:w-full">
-              The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.
+            <p class="text-lg md:w-[90%] md:mx-auto lg:w-full lg:mb-8 lg:text-left">
+              The barn house captivates with its blend of rustic charm and 
+              <span class="md:block">
+                modern sophistication, featuring weathered wood, sleek metal accents.
+              </span>
             </p>
+
+            <!-- card-container -->
+            <div class="p-4 lg:pl-0 md:grid md:grid-cols-2 lg:flex lg:flex-col gap-4">
+              <!-- card-1 -->
+              <div class="card card-side bg-base-100 mb-4">
+                <figure class="pl-8 pb-[3rem]">
+                  <img class="w-20"
+                    src="assets/commercial.png"
+                    alt="commercial image" />
+                </figure>
+                <div class="card-body text-left">
+                  <h2 class="card-title capitalize font-bold">commercial</h2>
+                  <p class="font-semibold text-[#737373] lg:w-3/4">
+                    View some of our achievements in the commercial sector Our creativity will surely satisfy you
+                  </p>
+                </div>
+              </div>
+
+              <!-- card-2 -->
+              <div class="card card-side bg-base-100 md:h-[218px] lg:h-full">
+                <figure class="pl-8 pb-[3rem]">
+                  <img class="w-20"
+                    src="assets/residential.png"
+                    alt="residential image" />
+                </figure>
+                <div class="card-body text-left">
+                  <h2 class="card-title capitalize font-bold">residential</h2>
+                  <p class="font-semibold text-[#737373] lg:w-3/4">
+                    View some of our achievements in the residential sector, Our creativity will surely satisfy you.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- image part -->
-          <div></div>
+          <div class="p-4 h-[250px] md:h-[400px] lg:h-full">
+            <img class="rounded-[1rem] w-full object-cover h-full" src="assets/Rectangle.png" alt="building image">
+          </div>
          </div>
+
+         <!-- our Info section -->
+            <!-- info-container -->
+             <div class="px-4">
+              <div class="stats w-full lg:py-6 md:grid md:grid-cols-2 lg:grid-cols-4 stats-vertical lg:stats-horizontal shadow">
+
+                <div class="stat w-full text-center pb-8">
+                  <!-- heroIcons svg used -->
+                  <div class="stat-title w-10 mx-auto mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                    </svg>
+                    
+                  </div>
+                  <div class="stat-value mb-2">235+</div>
+                  <div class="stat-desc capitalize text-lg font-semibold">happy client review</div>
+                </div>
+              
+                <div class="stat text-center pb-8">
+                  <!-- heroIcons svg used -->
+                  <div class="stat-title w-10 mx-auto mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184" />
+                    </svg>
+                    
+                  </div>
+                  <div class="stat-value mb-2">50+</div>
+                  <div class="stat-desc capitalize text-lg font-semibold">work departments</div>
+                </div>
+              
+                <div class="stat text-center pb-8">
+                  <div class="stat-title w-10 mx-auto mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                    </svg>
+                    
+                  </div>
+                  <div class="stat-value mb-2">30k+</div>
+                  <div class="stat-desc capitalize text-lg font-semibold">our happy client</div>
+                </div>
+
+                <div class="stat text-center pb-8">
+                  <div class="stat-title w-10 mx-auto mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                    </svg>
+                    
+                  </div>
+                  <div class="stat-value mb-2">307+</div>
+                  <div class="stat-desc capitalize text-lg font-semibold">
+                    stuff member
+                  </div>
+                </div>
+              </div>
+             </div>
+        </div>
      </main>
 
     <!-- footer section -->
