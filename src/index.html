@@ -5,24 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio Webpage</title>
 
-    <!-- tailwind cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              manrope: ['"Manrope"', "sans-serif"],
-              },
-      
-              backgroundImage: {
-              'page-bg': "url('./src/assets/bg.jpg')"
-            },
-          },
-        }
-      }
-    </script>
-
     <!-- daisyUI cdn-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,6 +16,24 @@
 
     <!-- font-awesome-cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+              },
+      
+              backgroundImage: {
+              'page-bg': "url('./src/assets/bg.jpg')"
+            },
+          },
+        }
+      }
+    </script>
 </head>
 
 <body class="font-manrope">
@@ -601,7 +601,7 @@
           </div>
         </div>
 
-        <div class="bg-page-bg bg-cover bg-center py-10 px-4 lg:p-16 mb-2">
+        <div class="bg-[url('../src/assets/bg.jpg')] bg-cover bg-center py-10 px-4 lg:p-16 mb-2">
            <div class="container mx-auto">
             <!-- section-heading -->
             <div class="text-center">
@@ -620,7 +620,7 @@
 
               </p>
             </div>
-
+            
             <!-- input-section -->
             <div class="md:grid md:grid-cols-12 lg:w-[70%] lg:mx-auto gap-6">
               <label class="input md:col-span-6 input-bordered py-7 flex rounded-[2rem] items-center gap-2 mb-5 md:mb-0">
